@@ -22,7 +22,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/grpc/grpc-swift", from: "1.0.0"),
-    .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0"),
+    .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
     .package(url: "https://github.com/mavlink/MAVSDK-XCFramework", .exact("0.41.0"))
   ],
   targets: [
