@@ -56,7 +56,7 @@ public class Drone {
         fatalError("This method does not exist anymore. Please use MavsdkServer(systemAddress) instead.")
     }
 
-    @available(*, unavailable)
+    @available(*, unavailable, message: "createStartMavlinkCompletable unavailable")
     public lazy var startMavlink = createStartMavlinkCompletable()
 
     @available(iOS, deprecated)
