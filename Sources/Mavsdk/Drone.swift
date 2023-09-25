@@ -50,18 +50,4 @@ public class Drone {
         self.tune = Tune(address: address, port: port, scheduler: scheduler)
     }
 
-#if os(iOS)
-    @available(*, unavailable, message: "Please start mavsdk_server with the MavsdkServer class")
-    public func setMavlinkPort(mavlinkPort: String) {
-        fatalError("This method does not exist anymore. Please use MavsdkServer(systemAddress) instead.")
-    }
-
-    @available(*, unavailable, message: "createStartMavlinkCompletable unavailable")
-    public lazy var startMavlink = createStartMavlinkCompletable()
-
-    @available(iOS, deprecated)
-    private func createStartMavlinkCompletable() -> Completable {
-        fatalError("This method does not exist anymore. Please use MavsdkServer.run() instead.")
-    }
-#endif
 }
